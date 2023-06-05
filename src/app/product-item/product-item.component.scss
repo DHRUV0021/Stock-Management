@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.addcard {
+    width: 25%;
+    height: 24vh;
+}
+
+
+// ==============INPUT CSS
+.ProName {
+    width: 22.5vw;
+    margin-right: 50px;
+}
+
+.proRate {
+    width: 22.5vw;
+}
+
+.addBtn {
+    position: relative;
+    left: 200px;
+}
+
+
+table {
+    width: 100%;
+}
+
+.container-fluid {
+    margin-top: 100px;
+}

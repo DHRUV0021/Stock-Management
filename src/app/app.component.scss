@@ -1,0 +1,66 @@
+.example-container {
+    width: 100%;
+    height: 100vh;
+}
+
+// Navbar CSS
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f5135e;
+    color: #fff;
+    font-size: 18px;
+}
+
+// Sidebar CSS
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #f5135e;
+    color: #fff;
+}
+
+// Add Padding in Body-Content
+.body-content {
+    padding: 30px;
+}
+
+// Change Main Body Background Color (accent color)
+.accent-sidebar.mat-drawer-container {
+    background-color: #feebff;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+// change sidebar width & add padding (accent-color)
+.accent-sidebar .example-sidenav {
+    padding: 5px;
+    width: 350px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+// Change Mat-Drawer Background Color (Accent color)
+.accent-sidebar .mat-drawer {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.sidemenu button {
+    width: 100% !important;
+    padding: 28px !important;
+    border-radius: 0!important;
+    color: #f5135e;
+}
+
+::ng-deep .mat-mdc-button.mat-primary {
+    justify-content: start;
+    display: flex;
+}
+
+::ng-deep .mat-mdc-button.mat-primary:hover {
+    background-color: #ffa8c5;
+    color: #ffffff!important;
+}
