@@ -20,8 +20,10 @@
 }
 
 .addBtn {
-    position: relative;
-    left: 200px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 10px;
 }
 
 
@@ -31,4 +33,124 @@ table {
 
 .container-fluid {
     margin-top: 100px;
+    width: 100%;
+}
+
+.actionPro{
+    display: flex;
+    justify-content: baseline;
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .addcard {
+        width: 50vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 47.7vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 47.7vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .addcard {
+        width: 50vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 46.7vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 46.7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .addcard {
+        width: 50vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 45.7vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 45.7vw;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .addcard {
+        width: 88vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 80vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 80vw;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .addcard {
+        width: 88vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 80vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 80vw;
+    }
+    .container-fluid {
+        margin-top: 100px;
+        width: 100%;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+    .addcard {
+        width: 88vw !important;
+        height: 26vh !important;
+    }
+
+    .ProName {
+        width: 80vw;
+        margin-right: 50px;
+    }
+
+    .proRate {
+        width: 80vw;
+    }
+    .container-fluid {
+        margin-top: 100px;
+        width: 100%;
+        position: relative;
+    }
+    
 }

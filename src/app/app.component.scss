@@ -9,7 +9,8 @@
     justify-content: start;
     align-items: center;
     padding: 5px 10px;
-    background-color: #f5135e;
+    // background-color: #f5135e;
+    background: linear-gradient(to right,rgb(20,136,204),rgb(43,50,178));
     color: #fff;
     font-size: 18px;
 }
@@ -24,7 +25,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    background-color: #f5135e;
+    // background-color: #f5135e;
+    background: linear-gradient(to right,rgb(20,136,204),rgb(43,50,178));
     color: #fff;
 }
 
@@ -35,7 +37,8 @@
 
 // Change Main Body Background Color (accent color)
 .accent-sidebar.mat-drawer-container {
-    background-color: #feebff;
+    // background-color: #feebff;
+    background-color:rgba(177, 215, 238, 0.224);
     color: rgba(0, 0, 0, 0.87);
 }
 
@@ -48,7 +51,9 @@
 
 // Change Mat-Drawer Background Color (Accent color)
 .accent-sidebar .mat-drawer {
-    background-color: #ffffff;
+    // background-color: #ffffff;
+    background-image: url("../assets/Stok-management.png");
+    height: 100vh;
     color: rgba(0, 0, 0, 0.87);
 }
 
@@ -56,7 +61,9 @@
     width: 100% !important;
     padding: 28px !important;
     border-radius: 0!important;
-    color: #f5135e;
+    // color: #f5135e;
+    color: rgb(144, 186, 211);
+    // color: linear-gradient(to right,rgb(144, 186, 211),rgb(43,50,178));
 }
 
 ::ng-deep .mat-mdc-button.mat-primary {
@@ -65,6 +72,7 @@
 }
 
 ::ng-deep .mat-mdc-button.mat-primary:hover {
-    background-color: #ffa8c5;
+    // background-color: #ffa8c5;
+    background-color:rgba(20, 137, 204, 0.59);
     color: #ffffff!important;
 }

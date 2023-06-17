@@ -14,7 +14,7 @@
           <mat-form-field floatLabel="always" class="proRate">
             <mat-label>Amount</mat-label>
             <input matInput type="number" class="example-right-align" placeholder="0">
-            <span matTextPrefix>$&nbsp;</span>
+            <span matTextPrefix>₹&nbsp;</span>
             <span matTextSuffix>.00</span>
           </mat-form-field>
         </div>
@@ -56,7 +56,18 @@
           <!-- Symbol Column -->
           <ng-container matColumnDef="symbol">
             <th mat-header-cell *matHeaderCellDef> Action </th>
-            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            <td mat-cell *matCellDef="let element">
+              <div class="actionPro">
+
+                <button mat-mini-fab color="accent" style="background-color: rgb(61, 129, 57);">
+                  <mat-icon>edit</mat-icon>
+                </button>&nbsp;
+
+                <button mat-mini-fab color="accent" style="background-color: rgb(227, 47, 47);">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+            </td>
           </ng-container>
 
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -1,61 +1,71 @@
-
-<h1 class="heading">Stocks</h1>
+<h1 class="heading mt-5">Stocks</h1>
 
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <div class="mat-elevation-z8">
-          <table mat-table [dataSource]="dataSource">
-  
-            <!-- Position Column -->
-            <ng-container matColumnDef="position">
-              <th mat-header-cell *matHeaderCellDef> No. </th>
-              <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-            </ng-container>
-  
-            <!-- Name Column -->
-            <ng-container matColumnDef="name">
-              <th mat-header-cell *matHeaderCellDef> Product-Name </th>
-              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-            </ng-container>
-  
-            <!-- Weight Column -->
-            <ng-container matColumnDef="weight">
-              <th mat-header-cell *matHeaderCellDef> Product-Rate </th>
-              <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-            </ng-container>
-            <!-- Weight Column -->
-            <ng-container matColumnDef="Qulity">
-              <th mat-header-cell *matHeaderCellDef> Total-Qulity </th>
-              <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-            </ng-container>
-            <!-- Weight Column -->
-            <ng-container matColumnDef="selling">
-              <th mat-header-cell *matHeaderCellDef> Total-selling </th>
-              <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-            </ng-container>
-        
-         <!-- Weight Column -->
-         <ng-container matColumnDef="Remain">
+  <div class="row">
+    <div class="col">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Product-Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef> Product-Rate </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+          <!-- Weight Column -->
+          <ng-container matColumnDef="Qulity">
+            <th mat-header-cell *matHeaderCellDef> Total-Qulity </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+          <!-- Weight Column -->
+          <ng-container matColumnDef="selling">
+            <th mat-header-cell *matHeaderCellDef> Total-selling </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="Remain">
             <th mat-header-cell *matHeaderCellDef> Total-Remaix </th>
             <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
           </ng-container>
-  
-            <!-- Symbol Column -->
-            <ng-container matColumnDef="symbol">
-              <th mat-header-cell *matHeaderCellDef> Action </th>
-              <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-            </ng-container>
-  
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-          </table>
-  
-          <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element">
+
+              <button mat-mini-fab color="accent" style="background-color: rgb(61, 129, 57);">
+                <mat-icon>edit</mat-icon>
+              </button>&nbsp;
+
+              <button mat-mini-fab color="accent" style="background-color: rgb(227, 47, 47);">
+                <mat-icon>delete</mat-icon>
+              </button>
+
+            </td>
+
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
                      showFirstLastButtons
                      aria-label="Select page of periodic elements">
       </mat-paginator> -->
-        </div>
       </div>
     </div>
   </div>
+</div>
