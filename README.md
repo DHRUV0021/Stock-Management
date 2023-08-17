@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
-## Development server
+# simple Stock Management
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+⋙ this picture is simple Stock Management Dashboard example
+![image](https://github.com/DHRUV0021/Stock-Management/assets/88469525/7ed671d0-279c-486d-82a4-1977d4b1e71f)
 
-## Code scaffolding
+⋙ this picture is product page view example
+![image](https://github.com/DHRUV0021/Stock-Management/assets/88469525/b22af58c-7e6c-4189-931a-a8a3781624cb)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+⋙ this picture is purchase page view example
+![image](https://github.com/DHRUV0021/Stock-Management/assets/88469525/74f326fc-3c82-424d-a1bf-b6d7e635d759)
 
-## Build
+⋙ this picture is stocks page view example
+![image](https://github.com/DHRUV0021/Stock-Management/assets/88469525/1a62cf78-0d94-43e6-8e35-a3188b201de8)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
