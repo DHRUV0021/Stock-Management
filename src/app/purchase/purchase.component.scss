@@ -1,0 +1,19 @@
+.first{
+    width:100%;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }

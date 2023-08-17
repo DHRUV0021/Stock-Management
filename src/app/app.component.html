@@ -1,7 +1,6 @@
-
 <mat-drawer-container class="example-container accent-sidebar" autosize>
 
-  <mat-drawer #drawer2 class="example-sidenav" mode="over">
+  <mat-drawer #drawer2 class="example-sidenav" mode="side" opened="true">
     <div class="sidebar">
       <div>Menu</div>
       <button type="button" mat-icon-button (click)="drawer2.toggle()">
@@ -13,6 +12,8 @@
           class="material-icons me-2 icon-color">dashboard</i>Dashboard</button>
       <button mat-button color="primary" routerLink="/product"><i
           class="material-icons me-2 icon-color">store</i>Product</button>
+      <button mat-button color="primary" routerLink="/purchase"><i
+        class="material-icons me-2 icon-color">store</i>purchase</button>
       <button mat-button color="primary" routerLink="/stock"><i
           class="material-icons me-2 icon-color">stacked_bar_chart</i>Stocks</button>
     </div>
@@ -27,7 +28,6 @@
   </div>
 
   <div class="body-content">
-
     <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>

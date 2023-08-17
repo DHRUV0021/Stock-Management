@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-product-item',
@@ -8,7 +9,8 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 })
 export class ProductItemComponent  {
 
-
+	closeResult: string | undefined;
+	constructor(private modalService: NgbModal) {}
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -18,6 +20,19 @@ export class ProductItemComponent  {
   // ngAfterViewInit() {
   //   this.dataSource.paginator = this.paginator;
   // }
+	openVerticallyCentered(content: any) {
+		this.modalService.open(content, { centered: true });
+	}
+//filter code
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
 }
 
 export interface PeriodicElement {

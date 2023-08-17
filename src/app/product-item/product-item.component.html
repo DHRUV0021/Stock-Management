@@ -1,15 +1,19 @@
-<div class="container productCard">
+<!-- <div class="container">
   <mat-card class="addcard">
     <mat-card-header>
-
       <div>
         <div>
           <mat-form-field class="example-full-width ProName">
-            <mat-label>Product name</mat-label>
+            <mat-label>Product No</mat-label>
             <input matInput>
           </mat-form-field>
         </div>
-
+        <div>
+          <mat-form-field class="example-full-width ProName">
+            <mat-label>Product Name</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </div>
         <div>
           <mat-form-field floatLabel="always" class="proRate">
             <mat-label>Amount</mat-label>
@@ -19,19 +23,24 @@
           </mat-form-field>
         </div>
       </div>
-
     </mat-card-header>
     <mat-card-actions>
       <button mat-flat-button color="accent" class="addBtn">Add</button>
     </mat-card-actions>
   </mat-card>
 </div>
+ -->
 
 
-
-<div class="container-fluid">
+<section class="container-fluid">
   <div class="row">
     <div class="col">
+
+      <mat-form-field class="filter">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
+      </mat-form-field>
+
       <div class="mat-elevation-z8">
         <table mat-table [dataSource]="dataSource">
 
@@ -58,14 +67,8 @@
             <th mat-header-cell *matHeaderCellDef> Action </th>
             <td mat-cell *matCellDef="let element">
               <div class="actionPro">
-
-                <button mat-mini-fab color="accent" style="background-color: rgb(61, 129, 57);">
-                  <mat-icon>edit</mat-icon>
-                </button>&nbsp;
-
-                <button mat-mini-fab color="accent" style="background-color: rgb(227, 47, 47);">
-                  <mat-icon>delete</mat-icon>
-                </button>
+                <i class="material-icons" style="color: green; cursor: pointer;">edit</i>
+                <i class="material-icons" style="color: red; cursor: pointer;">delete</i>
               </div>
             </td>
           </ng-container>
@@ -81,4 +84,50 @@
       </div>
     </div>
   </div>
-</div>
+</section>
+
+
+
+
+<button mat-fab color="primary" class="add-btn" (click)="openVerticallyCentered(content)">
+  <mat-icon>add</mat-icon>
+</button>
+
+
+<ng-template #content let-modal>
+  <div class="modal-body ">
+
+    <!-- <div>
+           <button type="button"  class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        </div>  -->
+    <div>
+      <mat-form-field appearance="outline" class="first mt-3" >
+        <mat-label>Product Code</mat-label>
+        <input matInput placeholder="Product Code">
+
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline" class="first">
+        <mat-label>Product Name</mat-label>
+        <input matInput placeholder="Product Name">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline" class="first">
+        <mat-label>Product Rate</mat-label>
+        <input matInput placeholder="Product Rate">
+        <span matTextPrefix>₹&nbsp;</span>
+        <span matTextSuffix>.00</span>
+      </mat-form-field>
+    </div>
+
+
+    <div class="modal-footer">
+      <button mat-raised-button color="primary">Add</button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </div>
+</ng-template>

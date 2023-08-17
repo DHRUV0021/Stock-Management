@@ -1,29 +1,11 @@
-.container {
-    display: flex;
-    justify-content: center;
-}
 
-.addcard {
-    width: 25%;
-    height: 24vh;
+.filter{
+    width :100%;
 }
 
 
-// ==============INPUT CSS
-.ProName {
-    width: 22.5vw;
-    margin-right: 50px;
-}
-
-.proRate {
-    width: 22.5vw;
-}
-
-.addBtn {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    margin: 10px;
+.first{
+    width: 100%;
 }
 
 
@@ -39,9 +21,19 @@ table {
 .actionPro{
     display: flex;
     justify-content: baseline;
-
 }
 
+.modal-dialog {
+    z-index: 5 !important;
+}
+
+.add-btn{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin: 50px;
+  }
+  
 
 @media screen and (max-width: 1440px) {
     .addcard {

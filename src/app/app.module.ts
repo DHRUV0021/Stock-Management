@@ -15,12 +15,16 @@ import { StockItemComponent } from './stock-item/stock-item.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { PurchaseComponent } from './purchase/purchase.component';
+import {MatSelectModule} from '@angular/material/select';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
     ProductItemComponent,
     DashboardItemComponent,
-    StockItemComponent
+    StockItemComponent,
+    PurchaseComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,11 @@ import { MatTableModule } from '@angular/material/table';
     MatListModule,
     MatCardModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
+    NgbModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
